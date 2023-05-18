@@ -17,5 +17,13 @@ public class Primitives {
         long large_integer=2365496596L;
 
         boolean check = true;
+
+        System.out.println(rollno);
+        System.out.println(name);
+        System.out.println(letter);
+        System.out.println(num);
+        System.out.println(big_num);
+        System.out.println(large_integer);
+        System.out.println(check);
     }
 }
