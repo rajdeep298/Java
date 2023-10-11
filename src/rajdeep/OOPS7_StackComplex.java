@@ -3,7 +3,6 @@ package rajdeep;
 
 import java.util.Scanner;
 
-
 class Complex1{
     int real,imaginary;
 
