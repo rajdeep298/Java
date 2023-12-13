@@ -30,6 +30,9 @@ public class Mutable_String_String_Builder {
         name4.append("Rajdeep Hi Rajdeep Hi Hi");
         System.out.println(name4.lastIndexOf("Hi"));
 
+        //index of a substring from a given index
+        System.out.println(name4.indexOf("Hi",10));
+
         //reverse
         StringBuilder name5=new StringBuilder("Rajdeep");
         name5.reverse();
