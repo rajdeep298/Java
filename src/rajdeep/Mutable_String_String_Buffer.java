@@ -29,7 +29,7 @@ public class Mutable_String_String_Buffer {
         //capacity
         System.out.println(sb.capacity());
         sb.append("Rajdeep Kundu");
-        System.out.println(sb.capacity());//new capacity=(old capacity*2)+
+        System.out.println(sb.capacity());//new capacity=(old capacity*2)+2
 
         //length
         System.out.println(sb.length());
