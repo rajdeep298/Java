@@ -10,6 +10,7 @@ public class Enum2_Main_in_Enum {
         FRIDAY,
         SATURDAY;
 
+
         public static void main(String[] args) {
             Day d=Day.MONDAY;
             System.out.println(d);
