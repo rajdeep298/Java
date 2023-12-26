@@ -1,9 +1,9 @@
 package rajdeep;
 
 enum Color{ //enums outside the class
-    Red,
-    Green,
-    Blue;
+    RED,
+    GREEN,
+    BLUE;
 }
 
 enum Day {
@@ -18,13 +18,13 @@ enum Day {
 
 //enum with methods
 enum Sub{
-    Bengali,
-    English,
-    Math,
-    Physics,
-    Chemistry,
-    Biology,
-    ComputerScience;
+    BENGALI,
+    ENGLISH,
+    MATHS,
+    PHYSICS,
+    CHEMISTRY,
+    BIOLOGY,
+    COMPUTER_SCIENCE;
 
     private Sub(){
         System.out.println("Subject: "+this.toString());
@@ -37,9 +37,9 @@ enum Sub{
 public class Enum {
 
     enum Animal{ //enums inside the class
-        Dog,
-        Cat,
-        Rat;
+        DOG,
+        CAT,
+        RAT;
     }
 
     Day d;
@@ -66,10 +66,10 @@ public class Enum {
         }
     }
     public static void main(String[] args) {
-        Color c1=Color.Red;
+        Color c1=Color.RED;
         System.out.println(c1);
 
-        Animal a1=Animal.Dog;
+        Animal a1=Animal.DOG;
         System.out.println(a1);
 
         //enum is public static final, so we can create main inside enum and as it is final it cant be inherited
@@ -85,7 +85,7 @@ public class Enum {
         }
 
         //enum with methods
-        Sub s1=Sub.Bengali;
+        Sub s1=Sub.BENGALI;
         System.out.println(s1);
         s1.subject();
     }
