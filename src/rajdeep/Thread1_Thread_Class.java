@@ -68,6 +68,8 @@ public class Thread1_Thread_Class{
         //isInterrupted()
         System.out.println("Thread is interrupted: "+t1.isInterrupted());
 
+        //activeCount()
+        System.out.println("Active thread count: "+Thread.activeCount());
         //and many more...
     }
 }
