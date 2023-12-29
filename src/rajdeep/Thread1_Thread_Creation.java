@@ -1,6 +1,6 @@
 package rajdeep;
 
-class Thread_Class extends Thread{
+class Thread_Class extends Thread{ //Thread class is extended
 
     //overriding run() method of Thread class
     public void run(){
@@ -18,7 +18,7 @@ class Thread_Class extends Thread{
 
 }
 
-class Thread_Class2 implements Runnable{
+class Thread_Class2 implements Runnable{ //Runnable interface is implemented
 
     //overriding run() method of Runnable interface
     public void run(){
@@ -27,7 +27,7 @@ class Thread_Class2 implements Runnable{
 
 }
 
-public class Thread1_Thread_Class{
+public class Thread1_Thread_Creation{
     public static void main(String[] args) {
 
         //Types of constructors in Thread class
