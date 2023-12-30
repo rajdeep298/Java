@@ -61,17 +61,17 @@ public class Graphics1_Basics extends Frame {
         g.drawPolygon(xPoints,yPoints,nPoints);
 
         //Draw Filled Polygon
-        int[] xPoints2={110,290,110,290,110};
-        int[] yPoints2={375,375,475,475,375};
+        int[] xPoints2={220,400,220,400,200};
+        int[] yPoints2={475,475,575,575,475};
         int nPoints2=5;//number of points
         //g.fillPolygon(int[] xPoints,int[] yPoints,int nPoints);
-
+        g.fillPolygon(xPoints2,yPoints2,nPoints2);
     }
 
     public static void main(String[] args) {
         Graphics1_Basics frame=new Graphics1_Basics();
         frame.setTitle("Graphics1_Basics");
-        frame.setSize(500,500);
+        frame.setSize(600,600);
         frame.setVisible(true);
     }
 }
