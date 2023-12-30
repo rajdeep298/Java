@@ -9,9 +9,11 @@ public class Thread2_Suspend_Resume extends Thread{
         Thread2_Suspend_Resume t1=new Thread2_Suspend_Resume();
         t1.start();
 
+        //noinspection removal
         t1.suspend();
         System.out.println("Thread is suspended.");
 
+        //noinspection removal
         t1.resume();
         System.out.println("Thread is resumed.");
     }
