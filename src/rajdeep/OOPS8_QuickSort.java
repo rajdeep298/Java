@@ -10,6 +10,7 @@ class QuickSort{
             quickSort(arr,pi+1,high);
         }
     }
+
     public int partition(int[] arr,int low,int high){
         int pivot=arr[low];
         int l=low,r=high;
@@ -32,6 +33,7 @@ class QuickSort{
         return r;
     }
 }
+
 public class OOPS8_QuickSort {
     public static void main(String[] args) {
         int[] arr;
