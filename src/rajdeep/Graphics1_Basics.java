@@ -59,6 +59,13 @@ public class Graphics1_Basics extends Frame {
         int nPoints=5;//number of points
         //g.drawPolygon(int[] xPoints,int[] yPoints,int nPoints);
         g.drawPolygon(xPoints,yPoints,nPoints);
+
+        //Draw Filled Polygon
+        int[] xPoints2={110,290,110,290,110};
+        int[] yPoints2={375,375,475,475,375};
+        int nPoints2=5;//number of points
+        //g.fillPolygon(int[] xPoints,int[] yPoints,int nPoints);
+
     }
 
     public static void main(String[] args) {
