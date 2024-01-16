@@ -1,4 +1,4 @@
-package rajdeep;
+package rajdeep.CC12_Assignment;
 
 import java.util.Scanner;
 
@@ -42,7 +42,7 @@ class Matrix{
     }
 }
 
-public class OOPS6_MatrixOperation {
+public class Assignment5_MatrixOperation {
     public static void main(String[] args) {
         Scanner input=new Scanner(System.in);
         System.out.println("Enter the number of rows and columns of both matrices: ");

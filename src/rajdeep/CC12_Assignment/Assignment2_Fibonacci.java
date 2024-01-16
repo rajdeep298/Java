@@ -1,4 +1,4 @@
-package rajdeep;
+package rajdeep.CC12_Assignment;
 
 import java.util.Scanner;
 class Fibo{
@@ -19,7 +19,7 @@ class Fibo{
 }
 
 
-public class OOPS3_Fibonacci {
+public class Assignment2_Fibonacci  {
     public static void main(String[] args) {
         Scanner input= new Scanner(System.in);
         int n=input.nextInt();

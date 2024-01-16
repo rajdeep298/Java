@@ -1,4 +1,4 @@
-package rajdeep;
+package rajdeep.CC12_Assignment;
 import java.util.Scanner;
 
 class Time{
@@ -15,7 +15,7 @@ class Time{
     }
 }
 
-public class OOPS2_Date {
+public class Assignment1_Date {
     public static void main(String[] args) {
         Scanner input=new Scanner(System.in);
 

@@ -1,4 +1,4 @@
-package rajdeep;
+package rajdeep.CC12_Assignment;
 
 import java.util.Scanner;
 
@@ -28,7 +28,7 @@ class Complex{
     }
 }
 
-public class OOPS4_ComplexNumber {
+public class Assignment3_ComplexNumber {
     public static void main(String[] args) {
         Scanner input=new Scanner(System.in);
         int real1=input.nextInt();

@@ -1,5 +1,5 @@
 //write a java program to sort an array of integers using bubble sort.Take Input of array elements under a constructor .
-package rajdeep;
+package rajdeep.CC12_Assignment;
 
 import java.util.Scanner;
 
@@ -32,7 +32,7 @@ class BubbleSort{
         }
     }
 }
-public class OOPS5_BubbleSort {
+public class Assignment4_BubbleSort {
     public static void main(String[] args) {
         Scanner input=new Scanner(System.in);
         System.out.print("Enter the size of the array:");

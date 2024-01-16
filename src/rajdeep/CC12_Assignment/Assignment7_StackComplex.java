@@ -1,5 +1,5 @@
 //Write a Java program to create a stack class of complex numbers. Where in stack class contains array of complex class.
-package rajdeep;
+package rajdeep.CC12_Assignment;
 
 import java.util.Scanner;
 
@@ -39,7 +39,7 @@ class ComplexStack{
     }
 
 }
-public class OOPS7_StackComplex {
+public class Assignment7_StackComplex {
     public static void main(String[] args) {
         Scanner input= new Scanner(System.in);
         ComplexStack cs=new ComplexStack();

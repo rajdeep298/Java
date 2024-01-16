@@ -1,4 +1,4 @@
-package rajdeep;
+package rajdeep.CC12_Assignment;
 
 import java.util.Scanner;
 
@@ -34,7 +34,7 @@ class QuickSort{
     }
 }
 
-public class OOPS8_QuickSort {
+public class Assignment6_QuickSort {
     public static void main(String[] args) {
         int[] arr;
         Scanner sc=new Scanner(System.in);
