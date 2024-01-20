@@ -1,52 +1,58 @@
 package rajdeep.CC12_Assignment;
 
-interface Sort{
-    void sort(int[] arr);
+interface Sortable {
+    int[] sortArray(int[] arr);
 }
-class Bubblesort implements Sort{
-    public void sort(int[] arr){
+
+class Bubblesort15 implements Sortable {
+    public int[] sortArray(int[] arr){
         for(int i=0;i<arr.length;i++){
             for(int j=0;j<arr.length-i-1;j++){
-                if(arr[j+1]<arr[j]){
+                if(arr[j]>arr[j+1]){
                     int temp=arr[j+1];
                     arr[j+1]=arr[j];
                     arr[j]=temp;
                 }
             }
         }
+        return arr;
     }
 }
-class Selectionsort implements Sort{
-    public void sort(int[] arr){
+
+class Selectionsort implements Sortable {
+    public int[] sortArray(int[] arr){
         for(int i=0;i<arr.length;i++){
-            int min=i;
+            int min=arr[i];
+            int min_index=i;
             for(int j=i+1;j<arr.length;j++){
-                if(arr[j]<arr[min]){
-                    min=j;
+                if(arr[j]<min){
+                    min=arr[j];
+                    min_index=j;
                 }
             }
-            int temp=arr[min];
-            arr[min]=arr[i];
-            arr[i]=temp;
+            int temp=arr[i];
+            arr[i]=arr[min_index];
+            arr[min_index]=temp;
         }
+        return arr;
     }
 }
+
 public class Assignment10_SortInterface {
     public static void main(String[] args) {
-        int[] arr={5,4,3,2,1};
-        Bubblesort b = new Bubblesort();
-        b.sort(arr);
-        System.out.println("Sorted array using bubblesort is:");
+        int[] arr={1,5,3,2,4};
+        Bubblesort15 bubblesort=new Bubblesort15();
+        Selectionsort selectionsort=new Selectionsort();
+        arr=bubblesort.sortArray(arr);
+        System.out.println("Sorted array using bubble sort is:");
         for(int i=0;i<arr.length;i++){
             System.out.print(arr[i]+" ");
         }
         System.out.println();
-        int[] arr1={5,4,3,2,1};
-        Selectionsort s = new Selectionsort();
-        s.sort(arr1);
-        System.out.println("Sorted array using selectionsort is:");
-        for(int i=0;i<arr1.length;i++){
-            System.out.print(arr1[i]+" ");
+        arr=selectionsort.sortArray(arr);
+        System.out.println("Sorted array using selection sort is:");
+        for(int i=0;i<arr.length;i++){
+            System.out.print(arr[i]+" ");
         }
     }
 }

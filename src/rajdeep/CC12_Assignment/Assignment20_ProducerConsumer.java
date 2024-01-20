@@ -44,7 +44,7 @@ class Producer20 extends Thread {
 
     @Override
     public void run() {
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < 5; i++) {
             b.produce(i);
             try {
                 Thread.sleep(1000);
@@ -64,7 +64,7 @@ class Consumer20 extends Thread {
 
     @Override
     public void run() {
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < 5; i++) {
             b.consume();
             try {
                 Thread.sleep(1000);

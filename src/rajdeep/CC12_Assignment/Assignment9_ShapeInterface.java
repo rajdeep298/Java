@@ -3,10 +3,10 @@ package rajdeep.CC12_Assignment;
 interface Shape{
     double getArea();
 }
-class rectangle implements Shape{
+class Rectangle implements Shape{
     double length;
     double breadth;
-    rectangle(double length,double breadth){
+    Rectangle(double length, double breadth){
         this.length=length;
         this.breadth=breadth;
     }
@@ -14,9 +14,9 @@ class rectangle implements Shape{
         return length*breadth;
     }
 }
-class circle implements Shape{
+class Circle implements Shape{
     double radius;
-    circle(double radius){
+    Circle(double radius){
         this.radius=radius;
     }
     public double getArea(){
@@ -36,9 +36,9 @@ class Triangle implements Shape{
 }
 public class Assignment9_ShapeInterface {
     public static void main(String[] args) {
-        rectangle r = new rectangle(10,20);
+        Rectangle r = new Rectangle(10,20);
         System.out.println("Area of rectangle is "+r.getArea()+"sqare units");
-        circle c = new circle(10);
+        Circle c = new Circle(10);
         System.out.println("Area of circle is "+c.getArea()+"sqare units");
         Triangle t = new Triangle(10,20);
         System.out.println("Area of triangle is "+t.getArea()+"sqare units");

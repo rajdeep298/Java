@@ -1,50 +1,68 @@
 package rajdeep.CC12_Assignment;
-
 import java.util.Scanner;
 
-class Complex{
-    int real,imaginary;
-    Complex(int real,int imaginary){
-        this.real=real;
-        this.imaginary=imaginary;
-    }
-    Complex(){
-        this.real=0;
-        this.imaginary=0;
+class Complex {
+    int real, imaginary;
+
+    Complex(int real, int imaginary) {
+        this.real = real;
+        this.imaginary = imaginary;
     }
 
-    Complex add(Complex c1,Complex c2){
-        Complex c3=new Complex();
-        c3.real=c1.real+c2.real;
-        c3.imaginary=c1.imaginary+c2.imaginary;
-        return c3;
+    Complex() {
+        this.real = 0;
+        this.imaginary = 0;
     }
 
-    Complex multiplication(Complex c1,Complex c2){
-        Complex c3=new Complex();
-        c3.real=c1.real*c2.real-c1.imaginary*c2.imaginary;
-        c3.imaginary=c1.imaginary*c2.real+c1.real*c2.imaginary;
-        return c3;
+    // Method to add two complex numbers
+    Complex add(Complex c) {
+        Complex result = new Complex();
+        result.real = this.real + c.real;
+        result.imaginary = this.imaginary + c.imaginary;
+        return result;
+    }
+
+    // Method to multiply two complex numbers
+    Complex multiply(Complex c) {
+        Complex result = new Complex();
+        result.real = this.real * c.real - this.imaginary * c.imaginary;
+        result.imaginary = this.imaginary * c.real + this.real * c.imaginary;
+        return result;
+    }
+
+    // Method to get data from the user
+    void getdata() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter the real part: ");
+        this.real = scanner.nextInt();
+        System.out.print("Enter the imaginary part: ");
+        this.imaginary = scanner.nextInt();
+    }
+
+    // Method to display complex number
+    void showdata(String operation) {
+        System.out.println(operation + " => " + this.real + " + (" + this.imaginary + ")i");
     }
 }
 
 public class Assignment3_ComplexNumber {
     public static void main(String[] args) {
-        Scanner input=new Scanner(System.in);
-        int real1=input.nextInt();
-        int imaginary1=input.nextInt();
-        int real2=input.nextInt();
-        int imaginary2=input.nextInt();
+        Scanner input = new Scanner(System.in);
 
+        System.out.println("Enter details for first complex number:");
+        Complex c1 = new Complex();
+        c1.getdata();
 
-        Complex c1=new Complex(real1,imaginary1);
-        Complex c2=new Complex(real2,imaginary2);
-        Complex c3=new Complex();
-        Complex c4=new Complex();
+        System.out.println("Enter details for second complex number:");
+        Complex c2 = new Complex();
+        c2.getdata();
 
-        c3=c3.add(c1,c2);
-        System.out.println("Addition=>"+c3.real+"+("+c3.imaginary+")i");
-        c4=c4.multiplication(c1,c2);
-        System.out.println("Multiplication=>"+c4.real+"+("+c4.imaginary+")i");
+        // Addition
+        Complex resultAdd = c1.add(c2);
+        resultAdd.showdata("Addition");
+
+        // Multiplication
+        Complex resultMult = c1.multiply(c2);
+        resultMult.showdata("Multiplication");
     }
 }

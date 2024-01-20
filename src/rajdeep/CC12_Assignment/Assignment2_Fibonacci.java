@@ -22,6 +22,7 @@ class Fibo{
 public class Assignment2_Fibonacci  {
     public static void main(String[] args) {
         Scanner input= new Scanner(System.in);
+        System.out.println("Enter the number of terms you want to print: ");
         int n=input.nextInt();
 
         Fibo fib =new Fibo();

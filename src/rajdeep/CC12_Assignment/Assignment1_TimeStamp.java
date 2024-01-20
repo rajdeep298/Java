@@ -19,6 +19,7 @@ public class Assignment1_TimeStamp {
     public static void main(String[] args) {
         Scanner input=new Scanner(System.in);
 
+        System.out.println("Enter Hour, Minute and Second");
         int hr=input.nextInt();
         int min=input.nextInt();
         int sec=input.nextInt();
