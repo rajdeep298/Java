@@ -15,7 +15,7 @@ class Time{
     }
 }
 
-public class Assignment1_Date {
+public class Assignment1_TimeStamp {
     public static void main(String[] args) {
         Scanner input=new Scanner(System.in);
 
