@@ -9,7 +9,7 @@ public class Vector_Basics {
         //This is a costly operation.
         //To avoid this, we use Vector.
         //Vector is similar to ArrayList but it is synchronized.
-        //Synchoronized means that only one thread can access the Vector at a time. Unlike ArrayList, multiple threads can access the ArrayList at a time.
+        //Synchronized means that only one thread can access the Vector at a time. Unlike ArrayList, multiple threads can access the ArrayList at a time.
         //Vector is present in java.util package.
         //Vector is a legacy class.
         //Vector is thread-safe.
