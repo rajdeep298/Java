@@ -19,7 +19,7 @@ public class Vector_Basics {
         //Vector implements RandomAccess interface.
 
         // Vector
-        List<Integer> vector=new Vector<Integer>();
+        List<Integer> vector= new Vector<>();
         vector.add(10);
         vector.add(20);
         vector.add(30);
