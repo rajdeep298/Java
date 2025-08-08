@@ -15,6 +15,7 @@ class Customer{
         }
         this.amount-=amount;
         System.out.println("Withdraw completed...");
+        System.out.println("Current balance: " + this.amount);
     }
 
     synchronized void deposit(int amount){
